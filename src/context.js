@@ -21,6 +21,8 @@ function getBaseSandbox() {
   var element = {
     firstChild: function () { return element },
     innerHTML: function () { return element },
+    setAttribute: function () { return element },
+    appendChild: function () { return element },
     // needed for "movesWhitespace()" test
     childNodes: [
       {nodeValue: 'Test: '},
